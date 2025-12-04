@@ -1,0 +1,68 @@
+# 🧮 bigmathlib (NPM Package)
+
+**bigmathlib** is a lightweight and fast arbitrary-precision decimal math library for Node.js and browser environments.  
+It allows you to work with large numbers safely without losing precision — perfect for finance, blockchain, scientific computation, and any high-precision number operations.
+
+---
+
+## ✨ Features
+
+- Arbitrary precision decimal arithmetic
+- Supports add, subtract, multiply, divide, modulo, power, sqrt, comparison, rounding & formatting
+- Configurable decimal places and rounding mode
+- Zero dependency & highly optimized
+- Works in **Node.js**, **Browser**, **TypeScript** environments
+
+---
+
+## 📦 Installation
+
+```bash
+npm install bigmathlib
+# or
+yarn add bigmathlib
+# or
+pnpm add bigmathlib
+```
+
+---
+
+## 🚀 Usage
+
+```javascript
+import Big from "bigmathlib";
+
+const a = new Big("12345678901234567890.12345");
+const b = new Big("10");
+
+console.log(a.plus(b).toString());   // → "12345678901234567900.12345"
+console.log(a.times(b).toString());  // → "123456789012345678901.2345"
+console.log(a.div(b).toString());    // → precise division result
+console.log(a.sqrt().toString());    // → square root with high precision
+```
+
+---
+
+## 🔧 Configuration
+
+```javascript
+Big.DP = 50;          // Decimal precision
+Big.RM = Big.roundUp; // Rounding mode
+```
+
+---
+
+## API Overview
+
+| Method                                                        | Description               |
+| ------------------------------------------------------------- | ------------------------- |
+| `plus(y)` / `add(y)`                                          | Addition                  |
+| `minus(y)` / `sub(y)`                                         | Subtraction               |
+| `times(y)` / `mul(y)`                                         | Multiplication            |
+| `div(y)`                                                      | Division (with precision) |
+| `mod(y)`                                                      | Modulo                    |
+| `pow(n)`                                                      | Power (integer exponent)  |
+| `sqrt()`                                                      | Square root               |
+| `cmp(y)`                                                      | Compare numbers           |
+| `eq / gt / gte / lt / lte`                                    | Comparisons               |
+| `toFixed / toPrecision / toExponential / toString / toNumber` | Format output             |

@@ -1,0 +1,44 @@
+{
+  "name": "bignum.js",
+  "description": "A lightweight, high-precision big number utility for JavaScript and Node.js.",
+  "version": "1.0.0",
+  "keywords": [
+    "arbitrary",
+    "precision",
+    "arithmetic",
+    "big",
+    "number",
+    "decimal",
+    "float",
+    "biginteger",
+    "bigdecimal",
+    "bignumber",
+    "bigint",
+    "bignum"
+  ],
+  "exports": {
+    ".": {
+      "import": "./big.mjs",
+      "require": "./big.js"
+    },
+    "./big.mjs": "./big.mjs",
+    "./big.js": "./big.js",
+    "./package.json": "./package.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MikeMcl/big.js.git"
+  },
+  "main": "big",
+  "browser": "big.js",
+  "module": "big.mjs",
+  "engines": {
+    "node": "*"
+  },
+  "license": "MIT",
+  "files": [
+    "big.js",
+    "big.mjs",
+    "./dist/*"
+  ]
+}
