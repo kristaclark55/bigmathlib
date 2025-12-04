@@ -16,6 +16,9 @@
     "bigint",
     "bignum"
   ],
+  "scripts": {
+    "test": "node ./test/runner.js"
+  },
   "exports": {
     ".": {
       "import": "./big.mjs",
