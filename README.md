@@ -67,6 +67,8 @@ Big.RM = Big.roundUp; // Rounding mode
 | `eq / gt / gte / lt / lte`                                    | Comparisons               |
 | `toFixed / toPrecision / toExponential / toString / toNumber` | Format output             |
 
+---
+
 ## 📄 License
 
 Copyright (c) 2025 kristaclark55

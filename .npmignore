@@ -1,0 +1,28 @@
+# Ignore common development and build artifacts
+node_modules/
+dist/
+build/
+coverage/
+
+# Ignore test-related files and directories
+.github/
+test/
+*.spec.js
+karma.conf.js
+
+# Ignore configuration files not needed in the published package
+.env
+.eslintrc.js
+.prettierrc.js
+.babelrc
+
+# Ignore documentation files if not intended for published package
+docs/
+
+# Include specific files despite general ignore rules (using negation)
+# For example, if 'dist/' is ignored, but you want to include a specific file within it
+!dist/my-important-file.js
+
+# Ignore specific file types
+*.log
+*.swp
